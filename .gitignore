@@ -59,3 +59,8 @@ typings/
 
 # next.js build output
 .next
+
+# don't publish my password online
+credentials.js
+
+.vscode
