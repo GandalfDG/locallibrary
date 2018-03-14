@@ -14,6 +14,8 @@ var credentials = require('./credentials')
 
 //Set up the mongoose connection
 var mongoose = require('mongoose');
+
+//the username and password for the database are stored in an untracked file for safety
 var mongoDB = 'mongodb://' + credentials.username + ':' + credentials.password + '@ds259175.mlab.com:59175/locallibrary';
 mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
